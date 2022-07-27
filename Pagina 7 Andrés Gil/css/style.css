@@ -1,0 +1,19 @@
+*{
+    margin: 0 0 0 0;
+}
+
+.logo{
+    width: 15%; 
+}
+
+#banner{
+    width: 100%;
+}
+
+#banner img{
+    width: 100%;
+}
+
+.nav-wrapper{
+    background-color: #937784 !important;
+   }

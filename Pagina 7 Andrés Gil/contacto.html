@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav style="background-color: #937784;">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center valign-wrapper"><img src="img/logo.svg" class="logo"></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Suscribete</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+		<div class="row">
+		<h3 class="center-align">CONTACTO</h3>
+			<article class="col s6 offset-s3">
+				<form method="POST" action="formulario-contacto.php">
+					<div class="input-field">
+						<i class="material-icons prefix">perm_identity</i>
+						<label for="nombre">Nombre</label>
+						<input type="text" name="nombre" required>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">person_pin</i>
+						<label for="apellido">Apellido</label>
+						<input type="text" name="apellido" required>
+					</div>
+					
+					<div class="input-field">
+						<i class="material-icons prefix">email</i>
+						<label for="email">Email</label>
+						<input type="email" name="email" required>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">mode_edit</i>
+						<label for="mensaje">Mensaje</label>
+						<textarea name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
+					</div>
+					
+					<p class="center-align">
+						<button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+					</p>
+
+				</form>
+
+			</article>
+		</div>
+	</section>
+
+
+  <footer class="page-footer" style="background-color: #937784;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">ELLE</h5>
+          <p class="grey-text text-lighten-4">Las últimas tendencias y actualidad del mundo de la moda femenina. Deja que Elle te aconseje e informe de los colores, la ropa que se lleva y cómo debes vestirte a la ultima moda</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Pinterest</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright" style="background-color: #937784;">
+      <div class="container">
+      © 2022 Copyright Todos los derechos reservados
+      <a class="grey-text text-lighten-4 right" href="#!">Mas Links</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems);
+        });
+    </script>
+</body>
+</html>
